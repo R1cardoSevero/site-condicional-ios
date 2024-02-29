@@ -1,0 +1,64 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url();
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div{
+    height:80vh;
+    width: 100vw;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+div button{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    border: none;
+    transition: 1s ease;
+}
+
+div button:hover{
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.filmes{
+    display: flex;
+    transform: translate(-50%, 5%);
+    margin-left: 50%;
+}
+
+
+#filme1{
+    background-image: url(filme-kid1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#filme2{
+    background-image: url(filme-kid2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#filme3{
+    background-image: url(filme-kid3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

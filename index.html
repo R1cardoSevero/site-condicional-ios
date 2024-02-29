@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmeFlix</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h1>Verificacao de Idade</h1>
+            <input type="number" name="" id="idadeInput" placeholder="por favor, digite sua idade aqui: ">
+            <button onclick="verificarIdade()">Verificar</button>
+        </div>
+    </div>
+</body>
+<script>
+    function verificarIdade(){
+        var idade = parseInt(document.getElementById('idadeInput').value);
+        idade >= 18 ? window.location.href = 'maior.html' : window.location.href = 'menor.html';
+    }
+</script>
+</html>
